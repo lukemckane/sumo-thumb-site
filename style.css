@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bodySection {
+	margin: 0;
+	height: 50vw;
+	width: 100vw;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#splash {
+	background-color: black;
+	background-image: url('splashpic.jpg');
+
+	background-size: 130vw;
+	background-position: left -900px;
+}
+
+#about {
+	background-color: yellow;
+	flex-flow: row-reverse;
+}
+
+#order {
+	background-color: green;
+}
+
+.subSection {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	padding: 2vmin;
+	gap: 1vmin;
+}
+
+#aboutSub {
+/*	background-color: white;*/
+/*	border-style: solid;*/
+/*	border-color: black;*/
+	border-width: 1vmin;
+	flex-flow: column;
+	align-items: center;
+}
+
+#orderSub {
+/*	background-color: white;*/
+/*	border-style: solid;*/
+/*	border-color: black;*/
+	border-width: 1vmin;
+	flex-flow: column;
+	align-items: center;
+}
+
+.subHeader {
+	width: 50%;
+	background-color: red;
+	border-radius: 2vmin;
+	border-style: solid;
+	border-color: black;
+	border-width: 1vmin;
+	text-align: center;
+}
+
+.subPara {
+	width: 100%;
+	flex-grow: 1;
+	background-color: blue;
+	border-radius: 2vmin;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.75vmin;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height:	80px;
+	background-color: red;
+}
+
+.title {
+	position: absolute;
+
+}
