@@ -82,8 +82,6 @@ body {
 }
 
 #matty {
-	display: flex;
-
 }
 
 #orderSub {
@@ -135,6 +133,24 @@ body {
 	border-style: solid;
 	border-color: #ffca14;
 	border-width: 1vmin;
+	display: flex;
+	flex-flow: column;
+	padding: 3vmin;
+	font-size: 2.85vmin;
+	font-family: agency;
+	font-weight: normal;
+}
+
+#matty {
+	justify-content: center;
+}
+
+#history {
+	justify-content: space-between;
+}
+
+.subPara > p {
+	margin: 0;
 }
 
 .navbar {
