@@ -1,3 +1,14 @@
+@font-face {
+	font-family: agency;
+	src: url('agencyfb_reg.ttf');
+}
+
+@font-face {
+	font-family: agency;
+	src: url('agencyfb_bold.ttf');
+	font-weight: bold;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -25,26 +36,35 @@ body {
 }
 
 #about {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	flex-flow: row-reverse;
 }
 
 #order {
-	background-color: green;
+/*	background-color: green;*/
 }
 
 .subSection {
 	width: 50%;
 	height: 100%;
 	display: flex;
-	padding: 2vmin;
-	gap: 1vmin;
+	padding: 4vmin;
+	gap: 2vmin;
+}
+
+.aboutImages {
+	width: 100%;
+	border-radius: 4vmin;
+	border-style: solid;
+	border-color: #ffca14;
+	border-width: 1vmin;
 }
 
 #aboutSub {
 /*	background-color: white;*/
 /*	border-style: solid;*/
 /*	border-color: black;*/
+	padding-left: 2vmin;
 	border-width: 1vmin;
 	flex-flow: column;
 	align-items: center;
@@ -59,24 +79,37 @@ body {
 	align-items: center;
 }
 
+#igPlug {
+	width: 100%;
+}
+
 .subHeader {
-	width: 50%;
-	background-color: red;
-	border-radius: 2vmin;
-	border-style: solid;
-	border-color: black;
-	border-width: 1vmin;
+	width: 100%;
+	background-color: #ffca14;
+	font-family: agency;
+	font-weight: bold;
+/*	-webkit-text-stroke-width: 1px;*/
+/*    -webkit-text-stroke-color: white;*/
+	border-radius: 3vmin;
+/*	border-style: solid;*/
+/*	border-color: black;*/
+/*	border-width: 1vmin;*/
 	text-align: center;
+}
+
+.subHeader > h2 {
+	margin: 0;
+	font-size: 500%;
 }
 
 .subPara {
 	width: 100%;
 	flex-grow: 1;
-	background-color: blue;
-	border-radius: 2vmin;
+/*	background-color: blue;*/
+	border-radius: 4vmin;
 	border-style: solid;
-	border-color: black;
-	border-width: 0.75vmin;
+	border-color: #ffca14;
+	border-width: 1vmin;
 }
 
 .navbar {
