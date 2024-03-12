@@ -83,7 +83,7 @@ body {
 
 #matty {
 	display: flex;
-	
+
 }
 
 #orderSub {
@@ -99,6 +99,8 @@ body {
 
 #igPlug {
 	width: 100%;
+	flex-flow: column;
+	align-items: center;
 }
 
 #form {
