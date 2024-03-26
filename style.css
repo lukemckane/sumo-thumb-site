@@ -20,17 +20,17 @@ body {
 
 .bodySection {
 	margin: 0;
-	height: 50vw;
 	width: 100vw;
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
+	align-items: stretch;
 }
 
 #splash {
 	background-color: black;
 	background-image: url('sumo-thumb-cover-2.png');
-
+	height: 50vw;
 	background-size: cover;
 	background-position: center;
 }
@@ -38,6 +38,7 @@ body {
 #about {
 /*	background-color: yellow;*/
 	flex-flow: row-reverse;
+	flex-grow: 1;
 }
 
 #order {
@@ -46,16 +47,19 @@ body {
 
 .subSection {
 	width: 50%;
-	height: 100%;
+/*	height: 100%;*/
+	flex-grow: 1;
 	display: flex;
 	padding: 4vmin;
 	gap: 2vmin;
 	position: relative;
+	align-items: stretch;
 }
 
-.aboutImages {
-	width: 100%;
-	height: 100%;
+#aboutImageDiv {
+/*	width: 100%;*/
+/*	height: 100%;*/
+	margin: 4vmin;
 	border-radius: 4vmin;
 	border-style: solid;
 	border-color: #ffca14;
@@ -63,8 +67,17 @@ body {
 	background-image: url('splashpic.jpg');
 	background-size: cover;
 	background-position: center;
-	position: relative;
-	transition: 0.5s ease-in-out;
+	align-items: stretch;
+	padding: 0;
+}
+
+#aboutImage {
+	margin: 4vmin;
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50%, 100%;
+
 }
 
 /*.aboutImages:hover {
@@ -139,6 +152,7 @@ body {
 	font-size: 2.85vmin;
 	font-family: agency;
 	font-weight: normal;
+	gap: 2vmin;
 }
 
 #matty {
