@@ -214,4 +214,8 @@ body {
 	#form {
 		height: 125vmin;
 	}
+
+	.subPara {
+		font-size: 4vmin;
+	}
 }
